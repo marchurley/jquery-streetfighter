@@ -27,7 +27,7 @@ html {
 	display: none;
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu, .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
   background-repeat: no-repeat;
 }
 
