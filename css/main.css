@@ -18,16 +18,17 @@ html {
 	float: left;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
-	height: 494px;	
+	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 }
 
-.ryu, .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu, .hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
 }
 
@@ -43,6 +44,11 @@ html {
 	background-image: url("../images/ryu-throwing-hadouken.png");
 }
 
+.ryu-cool {
+	background-image: url("../images/ryu-cool.gif");
+}
+
+
 .hadouken {
 	background-image: url("../images/hadouken.gif");
 	width: 156px;
@@ -54,3 +60,55 @@ html {
 	top: 170px;
 	left: -200px;
 }
+
+.content {
+	position: absolute;
+	width: 600px;
+	left: 700px;
+	padding-top: 55px;
+}
+
+.logo-sf, .logo-jq, .broughttoyou, .instruction {
+	display: none;
+}
+
+.logo-sf {
+	background-image: url("../images/logo-sf.png");
+	width: 682px;
+	height: 314px;
+	background-repeat: no-repeat;
+}
+
+.logo-jq {
+	background-image: url("../images/logo-jq.png");
+	width: 500px;
+	height: 172px;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+	padding-left: 20px;
+}
+
+.broughttoyou {
+	font-size: 80px;
+	color: red;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 115px;
+}
+
+
+.instruction {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: Acme;
+	font-style: italic;
+}
+
+ #textleft {
+ 	margin-right: 300px;
+ }
+
+
+ #textright {
+ 	margin-left: 300px;
+ }
