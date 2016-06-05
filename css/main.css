@@ -66,6 +66,8 @@ html {
 	width: 600px;
 	left: 700px;
 	padding-top: 55px;
+	font-family: Acme;
+	font-style: italic;
 }
 
 .logo-sf, .logo-jq, .broughttoyou, .instruction {
@@ -85,11 +87,11 @@ html {
 	height: 172px;
 	background-repeat: no-repeat;
 	margin-top: 100px;
-	padding-left: 20px;
+	margin-left: 40px;
 }
 
 .broughttoyou {
-	font-size: 80px;
+	font-size: 70px;
 	color: red;
 	text-align: center;
 	font-weight: 600;
@@ -100,8 +102,6 @@ html {
 .instruction {
 	text-transform: uppercase;
 	font-size: 30px;
-	font-family: Acme;
-	font-style: italic;
 }
 
  #textleft {
