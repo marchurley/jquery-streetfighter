@@ -6,6 +6,7 @@ html {
 	background-color: white;
 	margin-top: 110px;
 	padding-left: 100px;
+	padding-right: 100px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
@@ -61,10 +62,65 @@ html {
 	left: -200px;
 }
 
+
+.hulkryu {
+	width: 659px;
+	height: 494px;
+	float: right;
+	-webkit-filter: hue-rotate(90deg);
+	transform: scale(-1, 1);
+}
+
+.hulkryu-ready, .hulkryu-still, .hulkryu-throwing, .hulkryu-cool {
+	width: 659px;
+	height: 494px;
+}
+
+
+.hulkryu-ready, .hulkryu-throwing, .hulkryu-cool {
+	display: none;
+}
+
+.hulkryu, .hulkhadouken, .hulkryu-ready, .hulkryu-still, .hulkryu-throwing, .hulkryu-cool {
+  background-repeat: no-repeat;
+}
+
+.hulkryu-ready {
+	background-image: url("../images/ryu-ready-position.gif");
+}
+
+.hulkryu-still {
+	background-image: url("../images/ryu-standing-still.png");
+}
+
+.hulkryu-throwing {
+	background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.hulkryu-cool {
+	background-image: url("../images/ryu-cool.gif");
+}
+
+
+.hulkhadouken {
+	background-image: url("../images/hadouken.gif");
+	transform: scale(-1, 1);
+	-webkit-filter: hue-rotate(270deg);
+	width: 156px;
+	height: 90px;
+	display: none;
+	float: right;
+	position: relative;
+	z-index: 10;
+	top: 170px;
+	left: 250px;
+}
+
+
 .content {
 	position: absolute;
 	width: 600px;
-	left: 700px;
+	left: 550px;
 	padding-top: 55px;
 	font-family: Acme;
 	font-style: italic;
@@ -112,3 +168,6 @@ html {
  #textright {
  	margin-left: 300px;
  }
+*/
+
+

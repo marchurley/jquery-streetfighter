@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	intro();
 	play();
+	playhulk();
 });
 
 
@@ -48,6 +49,55 @@ function play(){
 			$(".ryu-cool").hide();
 			$(".ryu-ready").hide();
 			$(".ryu-still").show();
+			
+		}
+	});
+}
+ 
+function playhulk(){
+	$(".hulkryu").mouseenter(function(){
+		$(".hulkryu-still").hide();
+		$(".hulkryu-ready").show();
+	})
+	.mouseleave(function(){
+		$(".hulkryu-ready").hide();
+		$(".hulkryu-still").show();
+		$(".hulkryu-throwing").hide();
+	})
+	.mousedown(function(){
+		playHadouken();
+		$(".hulkryu-ready").hide();
+		$(".hulkryu-still").hide();
+		$(".hulkryu-cool").hide();
+		$(".hulkryu-throwing").show();
+		$(".hulkhadouken").finish().show().animate(
+			{"left": "-380px"},
+			500,
+			function(){
+				$(this).hide();
+				$(this).css("left", "250px");
+			}
+		);
+	})
+	.mouseup(function(){
+		$(".hulkryu-throwing").hide();
+		$(".hulkryu-cool").hide();
+		$(".hulkryu-ready").show();
+	});
+	
+	$(document).keydown(function ( e ) {
+		if (e.which === 89) {
+			$(".hulkryu-still").hide();
+			$(".hulkryu-ready").hide();
+			$(".hulkryu-throwing").hide();
+			$(".hulkryu-cool").show();
+		}
+	})
+	.keyup(function ( e ) {
+		if (e.which === 89) {
+			$(".hulkryu-cool").hide();
+			$(".hulkryu-ready").hide();
+			$(".hulkryu-still").show();
 			
 		}
 	});
