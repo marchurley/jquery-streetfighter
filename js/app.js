@@ -75,11 +75,11 @@ function playhulk(){
 			500,
 			function(){
 				$(this).hide();
-				$(this).css("left", "250px");
+				$(this).css("left", "150px");
 			}
 		);
 	})
-	.mouseup(function(){
+	.mouseup(function(){xxx
 		$(".hulkryu-throwing").hide();
 		$(".hulkryu-cool").hide();
 		$(".hulkryu-ready").show();
