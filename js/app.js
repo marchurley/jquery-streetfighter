@@ -79,7 +79,7 @@ function playhulk(){
 			}
 		);
 	})
-	.mouseup(function(){xxx
+	.mouseup(function(){
 		$(".hulkryu-throwing").hide();
 		$(".hulkryu-cool").hide();
 		$(".hulkryu-ready").show();
